@@ -13,10 +13,13 @@ from datetime import datetime, timedelta
 import argparse
 import datetime
 
+from kivy.app import App
+from kivy.uix.button import Button
 
 
-def main():
-	print("Subbu")
+class langLearnApp(App):
+	def build(self):
+		return Button(text = "Hello Subbu")
 
-
-if __name__ == "__main__" : main();
+if __name__ == "__main__" :
+	langLearnApp().run()
